@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="wfl1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+	xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+	<thing-type id="wfl1">
+		<label>Avantek WF-L1 WiFi LED</label>
+		<description>Avantek WF-L1 WiFi LED Device</description>
+
+		<channels>
+			<channel id="power" typeId="power" />
+			<channel id="color" typeId="color" />
+		</channels>
+
+		<config-description>
+			<parameter name="ip" type="text" required="true">
+				<label>IP</label>
+				<description>IP address or host name of the WF-L1</description>
+			</parameter>
+			<parameter name="sid" type="text" required="true">
+				<label>SID of the WF-L1</label>
+				<description>ID of the WF-L1</description>
+			</parameter>
+			<parameter name="port" type="integer" required="false" min="1024"
+				max="49151">
+				<label>Port</label>
+				<description>Used Port of the device</description>
+				<default>14580</default>
+				<advanced>true</advanced>
+			</parameter>
+			<parameter name="pollingPeriod" type="integer" required="false">
+				<label>Polling period</label>
+				<description>Polling period for refreshing the data in s</description>
+				<default>30</default>
+				<advanced>true</advanced>
+			</parameter>
+		</config-description>
+	</thing-type>
+
+		
+	<channel-type id="power">
+		<item-type>Switch</item-type>
+		<label>Power</label>
+		<description>Power state</description>
+	</channel-type>
+	<channel-type id="color">
+		<item-type>Color</item-type>
+		<label>Color</label>
+		<category>ColorLight</category>
+	</channel-type>
+
+</thing:thing-descriptions>

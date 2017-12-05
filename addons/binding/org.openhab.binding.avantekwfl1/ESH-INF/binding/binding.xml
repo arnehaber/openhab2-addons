@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<binding:binding id="wfl1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:binding="http://eclipse.org/smarthome/schemas/binding/v1.0.0"
+	xsi:schemaLocation="http://eclipse.org/smarthome/schemas/binding/v1.0.0 http://eclipse.org/smarthome/schemas/binding-1.0.0.xsd">
+
+	<name>Avantek WF-L1 Binding</name>
+	<description>This binding is used to control the Avantek WF-L1 LED light bulb connected by WiFi.</description>
+	<author>Arne Haber</author>
+
+</binding:binding>

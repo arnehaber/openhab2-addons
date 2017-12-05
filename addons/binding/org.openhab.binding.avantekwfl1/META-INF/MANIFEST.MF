@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ClassPath: .
+Bundle-ManifestVersion: 2
+Bundle-Name: Avantek WFL1 Binding
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-SymbolicName: org.openhab.binding.avantekwfl1;singleton:=true
+Bundle-Vendor: openHAB
+Bundle-Version: 1.0.0.qualifier
+Export-Package: 
+ org.openhab.binding.avantekwfl1,
+ org.openhab.binding.avantekwfl1.handler
+Import-Package: 
+ com.google.common.collect,
+ com.google.gson,
+ com.google.gson.annotations,
+ org.eclipse.jdt.annotation;resolution:=optional,
+ org.eclipse.smarthome.config.core,
+ org.eclipse.smarthome.config.discovery,
+ org.eclipse.smarthome.core.library.types,
+ org.eclipse.smarthome.core.thing,
+ org.eclipse.smarthome.core.thing.binding,
+ org.eclipse.smarthome.core.types,
+ org.openhab.binding.avantekwfl1,
+ org.openhab.binding.avantekwfl1.handler,
+ org.slf4j
+Service-Component: OSGI-INF/*.xml
